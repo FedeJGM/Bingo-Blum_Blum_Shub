@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo - Blum Blum Shub</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Bingo</h1>
+        <div id="bingoCard" class="bingo-card"></div>
+
+        <!-- Contenedor para los botones -->
+        <div class="d-flex justify-content-center my-3 flex-column flex-md-row">
+            <button id="callNumberBtn" class="btn btn-primary mr-md-2 mb-2 mb-md-0">Llamar un número</button>
+            <button id="resetBtn" class="btn btn-primary">Nuevo Bingo</button>
+        </div>
+        <div id="calledNumbers" class="mt-3"></div>
+        <div id="roundsInfo" class="mt-3"></div>
+        <!-- Área para mostrar los resultados -->
+        <div id="results" class="results"></div>
+    </div>
+
+    <script src="main.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+
+</html>
