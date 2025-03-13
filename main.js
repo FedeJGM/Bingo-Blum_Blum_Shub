@@ -43,10 +43,16 @@ let completedCardRound = null; // Rondas necesarias para completar la cartilla
 function isNumberInCard(calledNumber) {
   const cells = document.querySelectorAll('.bingo-cell');
   for (const cell of cells) {
-    if (Number(cell.textContent) === calledNumber || cell.textContent === 'FREE') {
+    const cellContent = cell.textContent;
+    if (cellContent === 'FREE') {
+      continue; // Ignorar la casilla "FREE"
+    }
+    if (Number(cellContent) === calledNumber) {
+      console.log(`Número ${calledNumber} está en la cartilla.`); // Depuración
       return true; // El número está en la cartilla
     }
   }
+  console.log(`Número ${calledNumber} NO está en la cartilla.`); // Depuración
   return false; // El número no está en la cartilla
 }
 
