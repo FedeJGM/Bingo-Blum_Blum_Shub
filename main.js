@@ -184,7 +184,7 @@ function callNumber() {
   calledNumbers.push(calledNumber); // Agregar a la lista de números llamados
 
   // Actualizar la lista de números llamados
-  calledNumbersDiv.textContent = `Números llamados: ${calledNumbers.join(', ')}`;
+  //calledNumbersDiv.textContent = `Números llamados: ${calledNumbers.join(', ')}`;
   rounds++;
   roundsInfoDiv.textContent = `Rondas: ${rounds}`;
 
