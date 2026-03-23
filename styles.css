@@ -1,0 +1,151 @@
+.colorful-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: color-change 3s infinite;
+}
+
+@keyframes color-change {
+    0% { color: #ff5733; }
+    25% { color: #33ff57; }
+    50% { color: #3357ff; }
+    75% { color: #f3ff33; }
+    100% { color: #ff5733; }
+}
+
+/* Fondo blanco para el cuerpo */
+body {
+    background-color: white; 
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Contenedor principal con fondo verde claro */
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #109a30; /* Verde para el recuadro */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Bola de Bingo */
+.bingo-ball {
+    width: 100px; /* Tamaño del círculo */
+    height: 100px; /* Tamaño del círculo */
+    background-color: #ffcc00; /* Amarillo para la bola */
+    color: #333; /* Color del texto */
+    border: 4px solid #ff8800; /* Borde naranja */
+    border-radius: 50%; /* Hacer que sea un círculo */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    font-size: 2rem; /* Tamaño del texto */
+    font-weight: bold;
+    margin: 20px auto; /* Centrar automáticamente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efecto 3D */
+}
+
+/* Estilo para la cartilla */
+.bingo-card {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 20px;
+}
+
+.bingo-cell {
+    border: 2px solid #333;
+    padding: 15px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.bingo-cell:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.called {
+    background-color: #ffcc00;
+    color: #333;
+    border: 2px solid #ff8800;
+}
+
+.free-cell {
+    background-color: #d1ecf1;
+    color: #0056b3;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Texto en blanco para "Números llamados" */
+#calledNumbers {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Texto en blanco para las "Rondas" */
+#roundsInfo {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #a71d2a;
+    transform: scale(1.05);
+}
+
+/* Estilo para el área de resultados */
+.results {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.bingo-card, .results, button {
+    animation: fadeIn 0.5s ease;
+}
