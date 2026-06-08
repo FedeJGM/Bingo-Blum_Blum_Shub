@@ -1,6 +1,8 @@
 # Bingo Blum Blum Shub
 Un proyecto interactivo de Bingo que utiliza el generador pseudoaleatorio de números **Blum Blum Shub**.
 
+![Image_alt](https://github.com/FedeJGM/Bingo-Blum_Blum_Shub/blob/5e5860bc78a377071a9f21dd6ba985edc8c246d4/assets/bingo.png)
+
 ## Características principales
 - Generador Blum Blum Shub: Algoritmo criptográfico para números aleatorios seguros
 - Detección automática de Bingos: Identifica automáticamente filas y columnas completas
